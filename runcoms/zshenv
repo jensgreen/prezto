@@ -9,3 +9,12 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN || -z "${TMPDIR}" ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+#
+# Python
+#
+# See: http://platform-guild.readthedocs.io/en/latest/language-guides/python/development.html
+#
+
+export PYTHONDONTWRITEBYTECODE=1
+export PYTHONWARNINGS='default,ignore:Not importing directory:ImportWarning'
