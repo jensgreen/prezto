@@ -18,3 +18,11 @@ fi
 
 export PYTHONDONTWRITEBYTECODE=1
 export PYTHONWARNINGS='default,ignore:Not importing directory:ImportWarning'
+
+#
+# Local environment
+#
+
+if [ -f "$HOME/.environ.local" ]; then
+    source "$HOME/.environ.local"
+fi
