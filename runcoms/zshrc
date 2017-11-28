@@ -15,6 +15,11 @@ fi
 # ==========================
 #
 
+# Interpret "^" literally, not as EXTENDED_GLOB glob inversion.
+# Allows stuff like 'git diff HEAD^'
+# https://github.com/robbyrussell/oh-my-zsh/issues/449
+unsetopt nomatch
+
 # http://stackoverflow.com/q/14348995
 if [ -n "$PS1" ]; then
     # This shell is interactive
