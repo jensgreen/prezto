@@ -41,6 +41,8 @@ fi
 # Virtualenvwrapper -- https://virtualenvwrapper.readthedocs.io
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     export WORKON_HOME="$HOME/.virtualenvs"
+    # Make the prezto python module not use Python 3
+    export VIRTUALENVWRAPPER_PYTHON="${commands[python]}"
     source /usr/local/bin/virtualenvwrapper.sh
 fi
 
