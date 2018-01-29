@@ -26,3 +26,8 @@ export PYTHONWARNINGS='default,ignore:Not importing directory:ImportWarning'
 if [ -f "$HOME/.environ.local" ]; then
     source "$HOME/.environ.local"
 fi
+
+# Syntax highlighting in less
+if [[ -n "$LESSOPEN" && -f "/usr/local/bin/lesspipe.sh" ]]; then
+  export LESSOPEN="|/usr/local/bin/lesspipe.sh %s" LESS_ADVANCED_PREPROCESSOR=1
+fi
