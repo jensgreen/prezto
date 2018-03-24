@@ -36,6 +36,10 @@ fi
 # base16 shell themes -- https://github.com/chriskempson/base16-shell
 if [ -n "$PS1" ] && [ -s $HOME/.dotfiles/base16-shell/ ]; then
     eval "$($HOME/.dotfiles/base16-shell/profile_helper.sh)"
+
+    if [ -n "$BASE16_THEME" ] && [ -f "$HOME/.dotfiles/base16-fzf/bash/$BASE16_THEME.config" ]; then
+      source "$HOME/.dotfiles/base16-fzf/bash/$BASE16_THEME.config"
+    fi
 fi
 
 # Virtualenvwrapper -- https://virtualenvwrapper.readthedocs.io
