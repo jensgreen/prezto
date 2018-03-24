@@ -46,16 +46,9 @@ typeset -gU cdpath fpath mailpath path
 ##
 ## 1) ~/.local/bin is for pipsi (https://github.com/mitsuhiko/pipsi)
 ##
-## 2) Prefer brew's python executable.
-## From caveats of `brew info python`:
-## > This formula installs a python2 executable to /usr/local/bin.
-## > If you wish to have this formula's python executable in your PATH then add
-## > the following to ~/.zshrc:
-## >     export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 path=(
   ~/bin
   ~/.local/bin
-  /usr/local/opt/python/libexec/bin
   /usr/local/{bin,sbin}
   $path
 )
