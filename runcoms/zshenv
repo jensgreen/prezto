@@ -31,3 +31,8 @@ fi
 if [[ -n "$LESSOPEN" && -f "/usr/local/bin/lesspipe.sh" ]]; then
   export LESSOPEN="|/usr/local/bin/lesspipe.sh %s" LESS_ADVANCED_PREPROCESSOR=1
 fi
+
+# virtualenvwrapper / pyenv-virtualenv / pyenv/virtualenvwrapper
+# prezto python module does the rest of the initialization
+export PROJECT_HOME="$HOME/dev"
+export WORKON_HOME="$HOME/.virtualenvs"

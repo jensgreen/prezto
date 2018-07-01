@@ -42,29 +42,6 @@ if [ -n "$PS1" ] && [ -s $HOME/.dotfiles/base16-shell/ ]; then
     fi
 fi
 
-# pyenv
-# https://github.com/pyenv/pyenv
-# https://github.com/pyenv/pyenv-virtualenv
-# https://github.com/pyenv/pyenv-virtualenvwrapper
-if (( $+commands[pyenv] )); then
-  eval "$(pyenv init -)"
-  eval "$(pyenv virtualenv-init -)"
-  export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-  export WORKON_HOME="$HOME/.virtualenvs"
-  export PROJECT_HOME="$HOME/dev"
-  pyenv virtualenvwrapper
-fi
-
-
-# # Virtualenvwrapper -- https://virtualenvwrapper.readthedocs.io
-# if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-#     export WORKON_HOME="$HOME/.virtualenvs"
-#     export PROJECT_HOME="$HOME/dev"
-#     # Make the prezto python module not use Python 3
-#     export VIRTUALENVWRAPPER_PYTHON="${commands[python]}"
-#     # source /usr/local/bin/virtualenvwrapper.sh
-# fi
-
 # fzf fuzzy finder -- https://github.com/junegunn/fzf
 if [ -f "$HOME/.fzf.zsh" ]; then
   source "$HOME/.fzf.zsh"
