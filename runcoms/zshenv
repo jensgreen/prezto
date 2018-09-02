@@ -36,3 +36,6 @@ fi
 # prezto python module does the rest of the initialization
 export PROJECT_HOME="$HOME/dev"
 export WORKON_HOME="$HOME/.virtualenvs"
+
+# Hide venv in prompt, prezto already shows it
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
