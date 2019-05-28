@@ -45,7 +45,8 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'tmux' \
   'prompt' \
-  'fasd'
+  'fasd' \
+  'contrib-kubernetes'
 
 #
 # Autosuggestions
