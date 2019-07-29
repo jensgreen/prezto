@@ -48,6 +48,9 @@ zstyle ':prezto:load' pmodule \
   'fasd' \
   'contrib-kubernetes'
 
+# The module 'directory' sets autocd, disable it
+unsetopt autocd
+
 #
 # Autosuggestions
 #
