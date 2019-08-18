@@ -8,6 +8,9 @@
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+  if [ -f "$HOME/.zpreztorc.local" ]; then
+      source "$HOME/.zpreztorc.local"
+  fi
 fi
 
 #
