@@ -26,8 +26,8 @@ unsetopt nomatch
 # http://stackoverflow.com/q/14348995
 if [ -n "$PS1" ]; then
     # This shell is interactive
-    # Ctrl-S and Ctrl-Q is normally for flow control, that feature
-    # and to allow those shortcuts to be used in apps
+    # Ctrl-S and Ctrl-Q is normally for flow control, disable
+    # that feature to allow those shortcuts to be used in apps
     stty -ixon
 fi
 
