@@ -45,8 +45,7 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'tmux' \
   'prompt' \
-  'fasd' \
-  'contrib-kubernetes'
+  'fasd'
 
 # The module 'directory' sets autocd, disable it
 unsetopt autocd
