@@ -97,3 +97,12 @@ if (( $+commands[jenv] )); then
   export PATH="$HOME/.jenv/bin:$PATH"
   eval "$(jenv init -)"
 fi
+
+# pyenv
+# "Pyenv shim spam breaks $PATH, scripts" (https://github.com/pyenv/pyenv/issues/1112)
+# "[WIP/RFC]: use separate shim paths per version" (https://github.com/pyenv/pyenv/pull/1185)
+if [ -d "$HOME/.pyenv" ]; then 
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
