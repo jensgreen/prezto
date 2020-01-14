@@ -101,8 +101,7 @@ fi
 # pyenv
 # "Pyenv shim spam breaks $PATH, scripts" (https://github.com/pyenv/pyenv/issues/1112)
 # "[WIP/RFC]: use separate shim paths per version" (https://github.com/pyenv/pyenv/pull/1185)
-if [ -d "$HOME/.pyenv" ]; then 
+if [ -d "$HOME/.pyenv" ]; then
   export PYENV_ROOT="$HOME/.pyenv"
-  export PATH="$PYENV_ROOT/bin:$PATH"
-  eval "$(pyenv init -)"
+  # pyenv initialization is done in modules/python/init.zsh
 fi
