@@ -98,10 +98,7 @@ if (( $+commands[jenv] )); then
   eval "$(jenv init -)"
 fi
 
-# pyenv
-# "Pyenv shim spam breaks $PATH, scripts" (https://github.com/pyenv/pyenv/issues/1112)
-# "[WIP/RFC]: use separate shim paths per version" (https://github.com/pyenv/pyenv/pull/1185)
-if [ -d "$HOME/.pyenv" ]; then
-  export PYENV_ROOT="$HOME/.pyenv"
-  # pyenv initialization is done in modules/python/init.zsh
+# choppy -- https://github.com/jensgreen/choppy
+if [ -f "$HOME/.dotfiles/choppy/choppy" ]; then
+  source "$HOME/.dotfiles/choppy/choppy"
 fi
