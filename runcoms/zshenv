@@ -17,7 +17,9 @@ fi
 #
 
 export PYTHONDONTWRITEBYTECODE=1
-export PYTHONWARNINGS='default,ignore:Not importing directory:ImportWarning'
+export PYTHONWARNINGS='ignore'
+# more permissive: 
+# export PYTHONWARNINGS='default,ignore:Not importing directory:ImportWarning'
 
 #
 # Local environment
