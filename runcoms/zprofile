@@ -44,7 +44,7 @@ typeset -gU cdpath fpath mailpath path
 ##
 ### Custom
 ##
-## 1) ~/.local/bin is for pipsi (https://github.com/mitsuhiko/pipsi)
+## 1) ~/.local/bin is for pipx (https://github.com/pipxproject/pipx)
 ##
 path=(
   ~/bin
