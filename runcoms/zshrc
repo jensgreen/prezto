@@ -102,3 +102,7 @@ fi
 if [ -f "$HOME/.dotfiles/choppy/choppy" ]; then
   source "$HOME/.dotfiles/choppy/choppy"
 fi
+
+if [ -f "$HOME/.zshrc.local" ]; then
+  source "$HOME/.zshrc.local"
+fi
