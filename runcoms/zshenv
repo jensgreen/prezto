@@ -18,16 +18,12 @@ fi
 
 export PYTHONDONTWRITEBYTECODE=1
 export PYTHONWARNINGS='ignore'
-# more permissive: 
+# more permissive:
 # export PYTHONWARNINGS='default,ignore:Not importing directory:ImportWarning'
 
 #
 # Local environment
 #
-
-if [ -f "$HOME/.environ.local" ]; then
-    source "$HOME/.environ.local"
-fi
 
 # Syntax highlighting in less
 if [[ -n "$LESSOPEN" && -f "/usr/local/bin/lesspipe.sh" ]]; then
@@ -44,3 +40,7 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # ripgrep (rg)
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
+
+if [ -f "$HOME/.environ.local" ]; then
+    source "$HOME/.environ.local"
+fi
