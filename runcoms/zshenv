@@ -41,6 +41,9 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 # ripgrep (rg)
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 
+# homebrew
+HOMEBREW_NO_AUTO_UPDATE=1
+
 if [ -f "$HOME/.environ.local" ]; then
     source "$HOME/.environ.local"
 fi
