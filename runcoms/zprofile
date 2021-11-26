@@ -40,6 +40,9 @@ typeset -gU cdpath fpath mailpath path
 #   $cdpath
 # )
 
+# Init homebrew
+[ -x '/opt/homebrew/bin/brew' ] && eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Set the list of directories that Zsh searches for programs.
 ##
 ### Custom
