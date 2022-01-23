@@ -48,10 +48,12 @@ typeset -gU cdpath fpath mailpath path
 ### Custom
 ##
 ## 1) ~/.local/bin is for pipx (https://github.com/pipxproject/pipx)
+## 2) ~/go/bin is for Golang
 ##
 path=(
   ~/bin
   ~/.local/bin
+  ~/go/bin
   /usr/local/{bin,sbin}
   $path
 )
