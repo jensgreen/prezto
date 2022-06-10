@@ -96,19 +96,20 @@ if (( $+commands[fzf] && $+functions[fasd] )); then
   alias j=_fzf_j
 fi
 
-if (( $+commands[jenv] )); then
-  export PATH="$HOME/.jenv/bin:$PATH"
-  eval "$(jenv init -)"
-fi
-
 # choppy -- https://github.com/jensgreen/choppy
 if [ -f "$HOME/.dotfiles/choppy/choppy" ]; then
   source "$HOME/.dotfiles/choppy/choppy"
 fi
 
-# asdf -- runtime manager https://asdf-vm.com/
+# asdf runtime manager -- https://asdf-vm.com/
 if [ -f "$HOME/.asdf/asdf.sh" ]; then
   source $HOME/.asdf/asdf.sh
+elif [ -f "/opt/homebrew/opt/asdf/libexec/asdf.sh" ] ; then
+  source "/opt/homebrew/opt/asdf/libexec/asdf.sh"
+fi
+# asdf-java plugin -- https://github.com/halcyon/asdf-java
+if [ -f "$HOME/.asdf/plugins/java/set-java-home.zsh" ]; then
+  source "$HOME/.asdf/plugins/java/set-java-home.zsh"
 fi
 
 # rustup -- https://github.com/rust-lang/rustup
