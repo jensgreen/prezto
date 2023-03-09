@@ -43,6 +43,8 @@ export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 
 # homebrew
 HOMEBREW_NO_AUTO_UPDATE=1
+HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
+HOMEBREW_NO_INSTALL_UPGRADE=1
 
 if [ -f "$HOME/.environ.local" ]; then
     source "$HOME/.environ.local"
