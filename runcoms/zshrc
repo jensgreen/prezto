@@ -117,6 +117,10 @@ if [ -f "$HOME/.cargo/env" ]; then
   source $HOME/.cargo/env
 fi
 
+if (( $+commands[fnm] )); then
+  eval "$(fnm env)"
+fi
+
 if [ -f "$HOME/.zshrc.local" ]; then
   source "$HOME/.zshrc.local"
 fi
