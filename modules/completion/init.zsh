@@ -14,6 +14,9 @@ fi
 # Add zsh-completions to $fpath.
 fpath=(${0:h}/external/src $fpath)
 
+# Add custom completions to $fpath.
+fpath=(${0:h}/src $fpath)
+
 # Add completion for keg-only brewed curl on macOS when available.
 if (( $+commands[brew] )); then
   brew_prefix=${HOMEBREW_PREFIX:-${HOMEBREW_REPOSITORY:-$commands[brew]:A:h:h}}

@@ -112,7 +112,7 @@ if [ -f "$HOME/.asdf/plugins/java/set-java-home.zsh" ]; then
   source "$HOME/.asdf/plugins/java/set-java-home.zsh"
 fi
 
-if (( $+commands[mise] )) &&  [ -f "$HOME/.dotfiles/mise.zsh" ]; then
+if (( $+commands[mise] )) && [ -f "$HOME/.dotfiles/mise.zsh" ]; then
   source "$HOME/.dotfiles/mise.zsh"
 fi
 
