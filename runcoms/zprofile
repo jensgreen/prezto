@@ -66,7 +66,7 @@ path=(
 
 # Set the default Less options.
 if [[ -z "$LESS" ]]; then
-  export LESS='-i -M -R -S -W -z-5 --incsearch --mouse'
+  export LESS='-X -i -M -R -S -W -z-5 --incsearch'
 fi
 
 # Set the Less input preprocessor.
