@@ -96,11 +96,6 @@ if (( $+commands[fzf] && $+functions[fasd] )); then
   alias j=_fzf_j
 fi
 
-# choppy -- https://github.com/jensgreen/choppy
-if [ -f "$HOME/.dotfiles/choppy/choppy" ]; then
-  source "$HOME/.dotfiles/choppy/choppy"
-fi
-
 # asdf runtime manager -- https://asdf-vm.com/
 if [ -f "$HOME/.asdf/asdf.sh" ]; then
   source $HOME/.asdf/asdf.sh
