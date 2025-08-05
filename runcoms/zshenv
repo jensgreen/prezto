@@ -30,6 +30,13 @@ if [[ -n "$LESSOPEN" && -f "/usr/local/bin/lesspipe.sh" ]]; then
   export LESSOPEN="|/usr/local/bin/lesspipe.sh %s" LESS_ADVANCED_PREPROCESSOR=1
 fi
 
+# base16/tinted
+export TINTED_SHELL_ENABLE_BASE16_VARS=1
+export BASE16_THEME_DEFAULT='oceanicnext'
+export BASE16_SHELL_PATH="$HOME/.dotfiles/base16-shell"
+# Disable base16-fzf because Tilix doesn't correctly set the shell background (but it does set the base16-fzf background)
+# export BASE16_FZF_PATH="$HOME/.dotfiles/base16-fzf"
+
 # virtualenvwrapper / pyenv-virtualenv / pyenv/virtualenvwrapper
 # prezto python module does the rest of the initialization
 export PROJECT_HOME="$HOME/dev"
