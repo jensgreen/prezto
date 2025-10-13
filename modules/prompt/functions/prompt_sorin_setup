@@ -178,6 +178,7 @@ function prompt_sorin_setup {
   RPROMPT+=${show_return}
   RPROMPT+='%f)'
   RPROMPT+='%(1j.󰤄 %j .)' # job count if >= 1. see man zshmisc
+  RPROMPT+='${YAZI_LEVEL+"%B%F{3} yazi%f%b "}'  # detect yazi file manager subshells
   RPROMPT+='${VIM:+" %B%F{6}V%f%b"}${_prompt_sorin_git}'
   SPROMPT='zsh: correct %F{1}%R%f to %F{2}%r%f [nyae]? '
 }
