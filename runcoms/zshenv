@@ -56,6 +56,9 @@ export HOMEBREW_NO_INSTALL_UPGRADE=1
 # fzf
 export FZF_CTRL_R_OPTS="--no-sort --preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
 
+# pure prompt
+export PURE_GIT_PULL=0
+
 if [ -f "$HOME/.environ.local" ]; then
     source "$HOME/.environ.local"
 fi

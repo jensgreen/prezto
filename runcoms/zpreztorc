@@ -146,7 +146,12 @@ zstyle ':prezto:module:git:alias' skip 'yes'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+zstyle ':prezto:module:prompt' theme 'pure'
+
+# Configure pure prompt.
+# More env options (PURE_*) in zshenv
+zstyle ':prompt:pure:prompt:success' color green
+zstyle ':prompt:pure:git:dirty' color 242  # same as branch
 
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
